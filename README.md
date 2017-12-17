@@ -93,7 +93,8 @@ We uploaded a Youtube vedio to show this progress: <https://youtu.be/lPpNMeaECYk
 
 Codes showed here: 
 - [train.ipynb](./train.ipynb)
-Codes explaination and details:<./>
+
+We run about 7 epochs and the result is good enough(val_loss is around 0.03, val_mean_absolute_error is around 0.14)
 
 ### Run the model:
 
