@@ -31,6 +31,12 @@ We read lots of papers and materials, then found that most projects used the mod
 
 Our main workload is to transfer this model to our own program as following.
 
+If you want to run our program, you need to download:
+- <./Car_Racing_AI.py>
+- <./data_collection.py>
+- <./play.py>
+- <./press_release_keyboard>
+
 ### Dependencies
 
 This project requires Python 3.6 and the following Python libraries installed: 
