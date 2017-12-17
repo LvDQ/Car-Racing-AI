@@ -32,10 +32,10 @@ We read lots of papers and materials, then found that most projects used the mod
 Our main workload is to transfer this model to our own program as following.
 
 If you want to run our program, you need to download:
-- <./Car_Racing_AI.py>
-- <./data_collection.py>
-- <./play.py>
-- <./press_release_keyboard>
+- [Car_Racing_AI.py](./Car_Racing_AI.py)
+- [data_collection.py](./data_collection.py)
+- [play.py](./play.py)
+- [press_release_keyboard](./press_release_keyboard)
 
 ### Dependencies
 
