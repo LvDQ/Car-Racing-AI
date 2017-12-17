@@ -117,3 +117,10 @@ W
 
 ## Conclusions and Future Directions
 
+Actually we met so many problems in the project but we can't list here one by one.
+We thought a lot to improve the result.
+At the beginning we stuck at the point how to collect data set： how to compare and match between screenshoot and keyboard value.
+Then we were so confused on model selection and optimizer selection - They didn't work all the time in different environment and problems.
+
+
+
