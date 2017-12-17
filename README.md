@@ -67,7 +67,10 @@ Screenshoot environment(Dataset Prepareing environment):
 
 We uploaded a Youtube vedio to show how to collect data: <https://youtu.be/LSzj2XZ5_7s>
 
-Codes showed here:<./>
+Codes showed here:
+- [Car_Racing_AI.py](./Car_Racing_AI.py)
+- [data_collection.py](./data_collection.py)
+
 Codes explaination and details:<./>
 
 ### Data Training
@@ -95,6 +98,10 @@ Codes explaination and details:<./>
 We uploaded a Youtube vedio to show this progress:<https://youtu.be/dZqdCnPsczU>
 
 Go to `cmd`, `cd` to where `play.py` located, input `python play.py`
+
+Codes showed here:
+- [Car_Racing_AI.py](./Car_Racing_AI.py)
+- [play.py](./play.py)
 
 Codes explaination and details:<./>
 
