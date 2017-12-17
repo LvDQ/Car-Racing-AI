@@ -112,7 +112,10 @@ Codes explaination and details:<./>
 
 ## Evaluation
 
-W
+You can watch our play.py vedio:<https://youtu.be/dZqdCnPsczU>
+Or Simply show you some of the prediction in different games.
+
+`NEED FOR SPEED 15` ![NFS15](./Pics/002.jpg) `Dirt4` ![Dirt4](./Pics/003.jpg)
 
 
 ## Conclusions and Future Directions
