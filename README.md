@@ -1,5 +1,8 @@
 # Car-Racing-AI
+
 #### Project by Jiadong Chen, Ke Yang
+
+
 
 ## Problem formulation
 
@@ -12,6 +15,8 @@ We want to drive ourselves to let CNN learn our decisions.
 We played the game with keyboard and we want cnn to imatate our play actions.
 
 
+
+
 ## Review of past techniques
 
 There are many similar projects here. `Udacity` did a lot in this area. 
@@ -21,6 +26,8 @@ There are many similar projects here. `Udacity` did a lot in this area.
 Also we found some similar github project such as <https://github.com/upul/Behavioral-Cloning>, <https://github.com/kevinhughes27/TensorKart>
 
 Those github project were mostly run in the Linux or more customized environment, and those game/emulator environments are somekind easier than we choose. We will introduce that in the following part.
+
+
 
 
 ## Solution
@@ -149,6 +156,8 @@ Or Simply show you some of the prediction in different games.
 `Dirt4:`
 
 ![Dirt4](./Pics/003.jpg)
+
+
 
 
 ## Conclusions and Future Directions
