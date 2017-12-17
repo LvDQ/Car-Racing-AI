@@ -167,5 +167,5 @@ We thought a lot to improve the result.
 At the beginning we stuck at the point how to collect data set： how to compare and match between screenshoot and keyboard value.
 Then we were so confused on model selection and optimizer selection - They didn't work all the time in different environment and problems.
 
-Through the result we found that CNN performs good to find some 'rule' to clone humans driving behaviour(even the way that cut the curve to race as me!)
+Through the result we found that CNN performs good to find some 'rule' to clone humans driving behaviour(my bad/good behavior in racing!)
 
