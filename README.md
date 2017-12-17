@@ -25,4 +25,4 @@ Those github project were mostly run in the Linux or more customized environment
 
 We read lots of papers and materials, then found that most projects used the model of NIVIDIA's paper.
 
-[1604.07316_End_to_End_Learning_for_Self-Driving_Cars](./1604.07316_End_to_End_Learning_for_Self-Driving_Cars)
+[1604.07316_End_to_End_Learning_for_Self-Driving_Cars](./1604.07316_End_to_End_Learning_for_Self-Driving_Cars.pdf)
