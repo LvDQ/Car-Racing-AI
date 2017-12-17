@@ -34,6 +34,7 @@ Our main workload is to transfer this model to our own program as following.
 If you want to run our program, you need to download:
 - [Car_Racing_AI.py](./Car_Racing_AI.py)
 - [data_collection.py](./data_collection.py)
+- [train.ipynb](./train.ipynb)
 - [play.py](./play.py)
 - [press_release_keyboard](./press_release_keyboard)
 
@@ -43,7 +44,7 @@ This project requires Python 3.6 and the following Python libraries installed:
 - [Tensorflow](https://www.tensorflow.org/)
 - [keras](https://keras.io/)
 - [scipy](https://www.scipy.org/)
-- [Jupyter notebook(optional)](http://jupyter.org/)
+- [Jupyter notebook](http://jupyter.org/)
 
 Since screenshoot.py and play.py are developed to run in Windows system, you also need to install these dependencies on your windows OS.
 
@@ -90,7 +91,8 @@ We choose `SGD` to be our `optimizer` and `MSE` to be the `loss`.
 #### Run the training program
 We uploaded a Youtube vedio to show this progress: <https://youtu.be/lPpNMeaECYk>
 
-Codes showed here:<./>
+Codes showed here: 
+- [train.ipynb](./train.ipynb)
 Codes explaination and details:<./>
 
 ### Run the model:
