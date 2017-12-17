@@ -38,6 +38,7 @@ This project requires Python 3.6 and the following Python libraries installed:
 - [keras](https://keras.io/)
 - [scipy](https://www.scipy.org/)
 - [Jupyter notebook(optional)](http://jupyter.org/)
+
 Since screenshoot.py and play.py are developed to run in Windows system, you also need to install these dependencies on your windows OS.
 
 Emulator:
@@ -56,9 +57,37 @@ Screenshoot environment(Dataset Prepareing environment):
 - RAM: 16.0GB
 - System type: 64-bit OS
 
+### Data Collecting
+
+We uploaded a Youtube vedio to show this progress: <https://youtu.be/BrvNyYMC1dI>
+
+Codes showed here:<./>
+
+### Data Training
+
+#### Network Architecture
+We slightly changed the model in NIVIDIA's paper, we remove the MaxPooling layer since we think the time cost is resonable enough to accept. We used about 12000 pictures to train the model and estimated 80s for one epoch finished.
+
+The network of NIVIDIA's shows here:
+
+![NV](./Pics/001.jpg)
 
 
 
+#### Run the training program
+We uploaded a Youtube vedio to show this progress: <https://youtu.be/lPpNMeaECYk>
+
+Codes showed here:<./>
+
+### Run the model:
+
+We uploaded a Youtube vedio to show this progress:<>
+
+Go to `cmd`, `cd` to where `play.py` located, input `python play.py`
 
 
+
+## Evaluation
+
+W
 
