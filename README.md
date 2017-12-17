@@ -14,9 +14,9 @@ We played the game with keyboard and we want cnn to imatate our play actions.
 
 ## Review of past techniques
 
-There are many similar projects here. Udacity did a lot in this area. 
+There are many similar projects here. `Udacity` did a lot in this area. 
 
-NIVIDIA trained their own model as a paper, and they get a good result to keep car stay in lane.
+`NIVIDIA` trained their own model as a paper, and they get a good result to keep car stay in lane.
 
 Also we found some similar github project such as <https://github.com/upul/Behavioral-Cloning>, <https://github.com/kevinhughes27/TensorKart>
 
@@ -59,9 +59,10 @@ Screenshoot environment(Dataset Prepareing environment):
 
 ### Data Collecting
 
-We uploaded a Youtube vedio to show this progress: <https://youtu.be/BrvNyYMC1dI>
+We uploaded a Youtube vedio to show how to collect data: <https://youtu.be/LSzj2XZ5_7s>
 
 Codes showed here:<./>
+Codes explaination and details:<./>
 
 ### Data Training
 
@@ -72,22 +73,31 @@ The network of NIVIDIA's shows here:
 
 ![NV](./Pics/001.jpg)
 
+We use Kera's with Tensorflow to build our own deep CNN Model. 
+We choose `SGD` to be our `optimizer` and `MSE` to be the `loss`.
+
 
 
 #### Run the training program
 We uploaded a Youtube vedio to show this progress: <https://youtu.be/lPpNMeaECYk>
 
 Codes showed here:<./>
+Codes explaination and details:<./>
 
 ### Run the model:
 
-We uploaded a Youtube vedio to show this progress:<>
+We uploaded a Youtube vedio to show this progress:<https://youtu.be/dZqdCnPsczU>
 
 Go to `cmd`, `cd` to where `play.py` located, input `python play.py`
+
+Codes explaination and details:<./>
 
 
 
 ## Evaluation
 
 W
+
+
+## Conclusions and Future Directions
 
