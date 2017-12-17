@@ -117,7 +117,7 @@ Or Simply show you some of the prediction in different games.
 
 `NEED FOR SPEED 15:` 
 
-![NFS15](./Pics/002.jpg){:height="50%" width="50%"}
+![NFS15](./Pics/002.jpg)
 
 `Dirt4:`
 
