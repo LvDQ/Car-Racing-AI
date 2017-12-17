@@ -148,7 +148,7 @@ Or Simply show you some of the prediction in different games.
 
 `Dirt4:`
 
-![Dirt4](./Pics/003.jpg){:height="50%" width="50%"}
+![Dirt4](./Pics/003.jpg)
 
 
 ## Conclusions and Future Directions
