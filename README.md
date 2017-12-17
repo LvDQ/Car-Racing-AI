@@ -6,9 +6,9 @@
 
 ## Problem formulation
 
-The objective of this project is to clone human driving behavior using a Deep Neural Network.
+The objective of this project is to `clone human driving` behavior using a Deep Neural Network.
 
-We trained a convolutional neural network (CNN) to map raw pixels from a screenshoot directly to steering commands.
+We trained a `convolutional neural network (CNN)` to map raw pixels from a screenshoot directly to steering commands.
 
 We want to drive ourselves to let CNN learn our decisions.
 
@@ -84,7 +84,7 @@ Image processing is using a thread, cause it is also blocking. The screenshot is
 `The index of corresponding image would be converted into string format and be zero-padding until it gains a length of 5, then this string + '.bmp' would be the file name of corresponding image.`This one-to-one map also provide robustness when part of images are deleted. Because we will try to load image with an incrementing file name. If there is any missing image, its corresponding y would be deleted. This provided great convinence while debugging.
 
 
-A little thread is used to limit the car speed in a relatively narrow interval. 
+A tiny thread is used to limit the car speed in a relatively narrow interval. 
 
 Last but not least, a control thread is used to start, pause, and kill the other threads. We `press O to start`, `P to pause`, and `L to kill`. This helped a lot while debugging.
 
@@ -121,18 +121,18 @@ We run about 7 epochs and the result is good enough(val_loss is around 0.03, val
 
 In play part, we mainly do four things: `screenshot`, `image processing`, `predict`, `asynchronous keyboard control`. 
 
-Screenshot is using almost the same thread as we used in data collecting. One difference is, we don't need to check the keyboard anymore. Another difference, the images are not saved by their index, instead they are temp bmp file, which would be covered by following images, and deleted when the thread killed.
+`Screenshot` is using almost the same thread as we used in data collecting. One difference is, we don't need to check the keyboard anymore. Another difference, the images are not saved by their index, instead they are temp bmp file, which would be covered by following images, and deleted when the thread killed.
 
-Image processing is not an independent thread anymore, because processed image must be real-time and depend on the latest screenshot. It is enclosed in screenshot thread this time. The way we process image is the same when we collect data sets, of course.
+`Image processing` is `not` an independent thread anymore, because processed image must be `real-time` and depend on the latest screenshot. It is enclosed in screenshot thread this time. The way we process image is the same when we collect data sets, of course.
 
-Predict is also included in the thread above, cause predict must depend on processed data. They three can consume 0.10 second altogether, meaning we refresh our prediction every 0.1s. This is acceptable. Prediction uses the model we trained and the prediction result would be stored in a variable y_pred. 
+`Predict` is also included in the thread above, cause predict must depend on processed data. They three can consume `0.10 second` altogether, meaning we refresh our prediction every 0.1s. This is acceptable. Prediction uses the model we trained and the prediction result would be stored in a variable `y_pred`. 
 
-Asynchronous keyboard control is an independent thread. It determines which key to press(left or right) by looking at y_pred. More importantly, it drives the keyboard press ratio, to converge to the ideal ratio, in 0.0001 second precision, by comparing the ideal ratio to history ratio. It will also check if y_pred is changed in each loop, if so, all history would be cleared and parameters would be updated, so it would behave according to the new y_pred, otherwise it would behave according to the current y_pred, even if it have no idea when next instruction (change of y_pred) would come.
+`Asynchronous` keyboard control is an independent thread. It determines which key to press(left or right) by looking at `y_pred`. More importantly, it drives the keyboard `press ratio`, to converge to the ideal ratio, in 0.0001 second precision, by comparing the ideal ratio to history ratio. It will also check if `y_pred` is changed in each loop, if so, all history would be cleared and parameters would be updated, so it would behave according to the new `y_pred`, otherwise it would behave according to the current `y_pred`, even if it have no idea when next instruction (change of y_pred) would come.
 
-The same little thread is used to limit the car speed in a relatively narrow interval. 
+The same tiny thread is used to limit the car speed in a relatively narrow interval. 
 
 
-We uploaded a Youtube vedio to show this progress:<https://youtu.be/dZqdCnPsczU>
+We uploaded a Youtube vedio to show this progress: <https://youtu.be/dZqdCnPsczU>
 
 Go to `cmd`, `cd` to where `play.py` located, input `python play.py`
 
