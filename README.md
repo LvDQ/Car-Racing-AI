@@ -14,6 +14,7 @@ We want to drive ourselves to let CNN learn our decisions.
 
 We played the game with keyboard and we want cnn to imatate our play actions.
 
+All datasets are collected by ourselves.
 
 
 
@@ -89,7 +90,7 @@ A tiny thread is used to limit the car speed in a relatively narrow interval.
 
 Last but not least, a control thread is used to start, pause, and kill the other threads. We `press O to start`, `P to pause`, and `L to kill`. This helped a lot while debugging.
 
-We uploaded a Youtube vedio to show how to collect data: <https://youtu.be/LSzj2XZ5_7s>
+`We uploaded a Youtube vedio to show how to collect data`: <https://youtu.be/LSzj2XZ5_7s>
 
 Codes showed here:
 - [Car_Racing_AI.py](./Car_Racing_AI.py)
@@ -111,7 +112,7 @@ We choose `SGD` to be our `optimizer` and `MSE` to be the `loss`.
 
 
 #### Run the training program
-We uploaded a Youtube vedio to show this progress: <https://youtu.be/lPpNMeaECYk>
+`We uploaded a Youtube vedio to show this progress`: <https://youtu.be/lPpNMeaECYk>
 
 Codes showed here: 
 - [train.ipynb](./train.ipynb)
@@ -133,7 +134,7 @@ In play part, we mainly do four things: `screenshot`, `image processing`, `predi
 The same tiny thread is used to limit the car speed in a relatively narrow interval. 
 
 
-We uploaded a Youtube vedio to show this progress: <https://youtu.be/dZqdCnPsczU>
+`We uploaded a Youtube vedio to show this progress`: <https://youtu.be/dZqdCnPsczU>
 
 First download  [trained_model](https://drive.google.com/open?id=1rc8yIdFYQXTotjNQL_1c_OmGdMJT_5wZ)
 
@@ -149,8 +150,8 @@ Codes showed here:
 
 ## Evaluation
 
-You can watch our play.py vedio:<https://youtu.be/dZqdCnPsczU>
-Or Simply show you some of the prediction in different games.
+`You can watch our play.py vedio`:<https://youtu.be/dZqdCnPsczU>
+Or Simply show you some of the predictions in different games.
 
 `NEED FOR SPEED 15:` 
 
@@ -166,10 +167,11 @@ Or Simply show you some of the prediction in different games.
 ## Conclusions and Future Directions
 
 Actually we met so many problems in the project but we can't list here one by one.
+The most time consuming part is the data collection part - `how to automatically get high quality screenshoot`.
 We thought a lot to improve the result.
 At the beginning we stuck at the point how to collect data set： how to compare and match between screenshoot and keyboard value.
 Then we were so confused on model selection and optimizer selection - They didn't work all the time in different environment and problems.
 
 Through the result we found that CNN performs good to find some 'rule' to clone humans driving behaviour(my bad/good behavior in racing!)
 
-Furture Directions: Reinforcement Learning
+Furture Directions:` Reinforcement Learning`, `Obstacle avoidance`(passenger/other race car recogonation)
