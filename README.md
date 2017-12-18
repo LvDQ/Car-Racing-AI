@@ -77,11 +77,11 @@ Screenshoot environment(Dataset Prepareing environment):
 
 In data collection part, we mainly do three things: `screenshot`, `keyboard detection`, `image processing`. Multithreading is widely applied in this project cause we are facing a lot of blocking funcitons.
 
-A screenshot takes about 0.02 seconds so we do not regard it as a blocking function. We put it `inside the thread` of keyboard detection to make sure they two `aligned`.
+A screenshot(`1920*1080`) takes about 0.02 seconds so we do not regard it as a blocking function. We put it `inside the thread` of keyboard detection to make sure they two `aligned`.
 
 Keyboard detection is using a thread, cause it must be blocking, the reason is, it is designed to get probability of a key (left or right, in detail) in a 0.3 second time period. In this 0.3 second, it would check the keyboard 200 times, in each of these 200 times, a pressed left key would be `-1`, a released key would be `0`, a pressed right key would be `1`, and those -1s, 0s and 1s would be averaged, and be appended as a float number into a list we called it `y`. 
 
-Image processing is using a thread, cause it is also blocking. The screenshot is sliced and suppressed to a much smaller size. This thread works by dectecting the newest saved screenshot, then process it, then replace the origin one. The process of deleting and saving images takes some time, but since it is an independent thread, so we don't take extra time.
+Image processing is using a thread, cause it is also blocking. The screenshot is sliced and suppressed to a much smaller size(this might change in different situation, example `1152*864`). This thread works by dectecting the newest saved screenshot, then process it, then replace the origin one. The process of deleting and saving images takes some time, but since it is an independent thread, so we don't take extra time.
 
 `The index of corresponding image would be converted into string format and be zero-padding until it gains a length of 5, then this string + '.bmp' would be the file name of corresponding image.`This one-to-one map also provide robustness when part of images are deleted. Because we will try to load image with an incrementing file name. If there is any missing image, its corresponding y would be deleted. This provided great convinence while debugging.
 
