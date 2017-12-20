@@ -44,7 +44,7 @@ If you want to run our program, you need to download:
 - [data_collection.py](./data_collection.py)
 - [train.ipynb](./train.ipynb)
 - [play.py](./play.py)
-- [press_release_keyboard](./press_release_keyboard)
+- [press_release_keyboard(copy from stack overflow)](./press_release_keyboard)
 - [trained_model](https://drive.google.com/open?id=1rc8yIdFYQXTotjNQL_1c_OmGdMJT_5wZ)
 
 ### Dependencies
